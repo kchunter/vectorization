@@ -1,7 +1,7 @@
 import numpy as np
 import time
 
-tensor = np.random.uniform(1, 1000, 175000000)
+tensor = np.random.uniform(0, 1, 200000000)
 
 def vectorized_sum(tensor):
 
@@ -25,7 +25,7 @@ def iterative_sum(tensor):
     return end_time - start_time
     
 
-print(vectorized_sum(tensor)) #average: 0.8
-print(iterative_sum(tensor))  #average: 19.0
+print(vectorized_sum(tensor)) #average: 0.86 s
+print(iterative_sum(tensor))  #average: 19.4 s
 
     
