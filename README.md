@@ -1,4 +1,4 @@
-# summation
+# summation.py
 
 Difference in execution time between vectorized and iterated summation over 1-d tensor.
 
